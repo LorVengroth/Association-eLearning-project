@@ -1,0 +1,14 @@
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+  datasource:
+    url: jdbc:postgresql://localhost:5432/association_ecommerce_db
+    username: postgres
+    password: 369369369
+
+  application:
+    name: project
+server:
+  port: 8888
