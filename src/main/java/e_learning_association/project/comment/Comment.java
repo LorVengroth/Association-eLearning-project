@@ -1,5 +1,6 @@
 package e_learning_association.project.comment;
 
+import e_learning_association.project.config.auditing.BasedEntity;
 import e_learning_association.project.video.Video;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -14,7 +15,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @Entity
 @Table( name = "comments")
-public class Comment {
+public class Comment extends BasedEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id ;
